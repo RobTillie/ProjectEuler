@@ -15,5 +15,14 @@ namespace UnitTests
 
             Assert.AreEqual(233168, result);
         }
+
+        [TestMethod]
+        public void TestProblem2()
+        {
+            var p2 = new Problem_2();
+            var result = p2.Solve();
+
+            Assert.AreEqual(4613732, result);
+        }        
     }
 }
