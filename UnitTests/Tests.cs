@@ -10,8 +10,8 @@ namespace UnitTests
         [TestMethod]
         public void TestProblem1()
         {
-            var p1 = new Problem_1();
-            var result = p1.Solve();
+            var p = new Problem_1();
+            var result = p.Solve();
 
             Assert.AreEqual(233168, result);
         }
@@ -19,10 +19,19 @@ namespace UnitTests
         [TestMethod]
         public void TestProblem2()
         {
-            var p2 = new Problem_2();
-            var result = p2.Solve();
+            var p = new Problem_2();
+            var result = p.Solve();
 
             Assert.AreEqual(4613732, result);
-        }        
+        }
+
+        [TestMethod]
+        public void TestProblem3()
+        {
+            var p = new Problem_3();
+            var result = p.Solve();
+
+            Assert.AreEqual(6857, result);
+        }
     }
 }
