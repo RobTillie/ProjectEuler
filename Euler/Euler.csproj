@@ -44,9 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\IProblem.cs" />
+    <Compile Include="Core\MathFunctions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Solutions\Problem_1.cs" />
+    <Compile Include="Solutions\Problem_4.cs" />
     <Compile Include="Solutions\Problem_3.cs" />
     <Compile Include="Solutions\Problem_2.cs" />
   </ItemGroup>
