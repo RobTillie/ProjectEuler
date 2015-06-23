@@ -27,5 +27,25 @@ namespace Euler.Core
 
             return true;
         }
+
+        public static long SumOfSquare(long n)
+        {
+            long total = 0;
+
+            for (int i = 1; i <= n; i++)
+                total += i * i;
+
+            return total;
+        }
+
+        public static long SquareOfSum(long n)
+        {
+            long total = 0;
+
+            for (int i = 1; i <= n; i++)
+                total += i;
+
+            return total * total;
+        }
     }
 }
