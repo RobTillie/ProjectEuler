@@ -47,5 +47,46 @@ namespace Euler.Core
 
             return total * total;
         }
+
+        /// <summary>
+        /// Checks whether a number is a prima number
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns></returns>
+        public static bool IsPrime(long n)
+        {
+            if (n <= 1) return false;
+            
+            // we only have to test until Sqrt(n)
+            for (int i = 2; i * i <= n; i++)
+            {
+                if (n % i == 0) return false;
+            }
+
+            return true;
+        }
+
+        /// <summary>
+        /// Finds the n-th prime number
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns></returns>
+        public static long FindPrimeNumber(int n)
+        {
+            long primeNumbersFound = 0;
+            long currentNumber = 0;
+
+            while (primeNumbersFound < n)
+            {
+                currentNumber++;
+
+                if (IsPrime(currentNumber))
+                {
+                    primeNumbersFound++;
+                }
+            }
+
+            return currentNumber;
+        }
     }
 }
